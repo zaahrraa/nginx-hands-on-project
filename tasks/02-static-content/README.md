@@ -11,7 +11,7 @@ See `conf/static-site.conf`:
 ```nginx
 server {
     listen 8081;
-    server_name static.example.com;
+    server_name localhost;
 
     root /var/www/static-site;
     index index.html;
