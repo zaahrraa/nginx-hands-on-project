@@ -279,7 +279,7 @@ All screenshots are organized by task in the `screenshots/tasks/` folder. Each t
 ---
 
 
-### DocumentTION
+### Documentation
 - **Document everything** - screenshots and READMEs
 - **Test everything** - always run `nginx -t`
 - **Break and fix** - learn from mistakes
