@@ -1,4 +1,4 @@
-# 🚀 Nginx Hands-On Project
+# Nginx Hands-On Project
 
 ## Complete Beginner-to-Portfolio Nginx Guide
 
@@ -6,7 +6,7 @@ This is a comprehensive hands-on project where I installed, configured, and mast
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 I built this project to learn Nginx by actually **doing** it — not just watching videos. I completed 17 hands-on tasks covering everything from basic installation to advanced monitoring and troubleshooting.
 
@@ -18,7 +18,7 @@ I built this project to learn Nginx by actually **doing** it — not just watchi
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -32,7 +32,7 @@ I built this project to learn Nginx by actually **doing** it — not just watchi
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 nginx-hands-on-project/
@@ -81,9 +81,9 @@ nginx-hands-on-project/
 
 ---
 
-## 📚 Complete Task List
+##  Complete Task List
 
-### 01. Install Nginx ✅
+### 01. Install Nginx 
 Installed Nginx on Ubuntu 22.04 and verified it was running.
 
 **Key Commands:**
@@ -97,7 +97,7 @@ sudo systemctl status nginx
 
 ---
 
-### 02. Serve Static Content ✅
+### 02. Serve Static Content 
 Created a custom static website with `root` and `index` directives.
 
 **Config:**
@@ -112,70 +112,70 @@ server {
 
 ---
 
-### 03. Reverse Proxy ✅
+### 03. Reverse Proxy 
 Configured Nginx to proxy requests to a Python backend server.
 
 **Key Learning:** `proxy_pass` forwards requests to backend servers with custom headers.
 
 ---
 
-### 04. Load Balancing ✅
+### 04. Load Balancing 
 Implemented round-robin, least_conn, and ip_hash load balancing algorithms.
 
 **Key Learning:** `upstream` blocks define backend pools for distributing traffic.
 
 ---
 
-### 05. SSL/TLS with Self-Signed Certificate ✅
+### 05. SSL/TLS with Self-Signed Certificate 
 Generated a self-signed SSL certificate and configured HTTPS on port 443.
 
 **Key Learning:** SSL/TLS encrypts traffic; self-signed certs are great for learning.
 
 ---
 
-### 06. Caching with `proxy_cache` ✅
+### 06. Caching with `proxy_cache` 
 Configured caching to serve repeated requests faster from cache.
 
 **Key Learning:** `X-Cache-Status: HIT` vs `MISS` shows if cache is working.
 
 ---
 
-### 07. WebSocket Support ✅
+### 07. WebSocket Support 
 Configured Nginx to proxy WebSocket connections for real-time apps.
 
 **Key Learning:** WebSockets need special headers (`Upgrade`, `Connection`).
 
 ---
 
-### 08. PHP Integration via PHP-FPM ✅
+### 08. PHP Integration via PHP-FPM 
 Configured Nginx to execute PHP code using PHP-FPM.
 
 **Key Learning:** Nginx can't run PHP directly — uses `fastcgi_pass` to PHP-FPM.
 
 ---
 
-### 09. URL Rewriting and Redirects ✅
+### 09. URL Rewriting and Redirects 
 Implemented `return 301` redirects and internal `rewrite` rules.
 
 **Key Learning:** `rewrite` changes URL internally; `return` redirects the browser.
 
 ---
 
-### 10. Security Headers and Basic Authentication ✅
+### 10. Security Headers and Basic Authentication 
 Added security headers and password-protected the `/admin` area.
 
 **Key Headers:** `X-Frame-Options`, `X-Content-Type-Options`, `X-XSS-Protection`, `Referrer-Policy`
 
 ---
 
-### 11. Custom Error Pages (404, 403) ✅
+### 11. Custom Error Pages (404, 403) 
 Created custom user-friendly error pages for 404 and 403 errors.
 
 **Key Learning:** `error_page` directive with `internal` location blocks.
 
 ---
 
-### 12. Multiple Sites with Subdomains ✅
+### 12. Multiple Sites with Subdomains 
 Hosted multiple sites on one server using separate server blocks.
 
 **Key Learning:** `server_name` tells Nginx which site to serve.
