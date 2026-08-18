@@ -47,5 +47,3 @@ Also checked the headers arriving at the backend, to confirm `X-Real-IP` and fri
 ## Result
 Requests to Nginx on port 8081 are transparently forwarded to a Python backend on port 5000, with the backend correctly receiving custom headers about the original request.
 
-## What I learned / Issues I hit
-`proxy_pass` alone forwards the request, but without `proxy_set_header Host $host;`, the backend can end up seeing Nginx's own internal request details instead of what the original client actually sent — which matters a lot for any backend that does logic based on hostname or client IP (e.g. rate limiting, geolocation, logging). Also confirmed that killing the background Python server (`kill %1`) immediately breaks the proxy — expected, since Nginx has nothing to forward to anymore, and it's a good reminder that a reverse proxy is only as reliable as the backend it points to.
